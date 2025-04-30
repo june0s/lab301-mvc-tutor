@@ -13,6 +13,7 @@
 	<properties>
 		<spring.maven.artifact.version>5.3.6</spring.maven.artifact.version>
 		<org.egovframe.rte.version>4.0.0</org.egovframe.rte.version>
+		<org.egovframe.rte.redis.version>4.2.0</org.egovframe.rte.redis.version>
 	</properties>
 
 	<repositories>
@@ -70,6 +71,30 @@
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
 			<version>2.11.0</version>
+		</dependency>
+
+		<!-- for redis -->
+		<dependency>
+			<groupId>org.egovframe.rte</groupId>
+			<artifactId>org.egovframe.rte.fdl.reactive</artifactId>
+			<version>${org.egovframe.rte.redis.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.egovframe.rte</groupId>
+			<artifactId>org.egovframe.rte.psl.reactive.redis</artifactId>
+			<version>${org.egovframe.rte.redis.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.egovframe.rte</groupId>
+			<artifactId>org.egovframe.rte.ptl.reactive</artifactId>
+			<version>${org.egovframe.rte.redis.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.28</version>
+			<optional>true</optional>
 		</dependency>
 	</dependencies>
 

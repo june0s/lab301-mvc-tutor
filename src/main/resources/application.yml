@@ -1,0 +1,9 @@
+server:
+    port: 9094
+
+spring:
+    application:
+        name: REDIS-SERVER
+    redis:
+        host: localhost
+        port: 6379
